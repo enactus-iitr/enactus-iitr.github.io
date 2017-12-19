@@ -1,4 +1,4 @@
-#Enactus, IIT Roorkee Chapter
+# Enactus, IIT Roorkee Chapter
 
 ## This is the official website of [Enactus, IIT Roorkee](https://enactus-iitr.github.io)
 
