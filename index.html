@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="app/css/materialize.min.css" type="text/css" />
     <link href="app/css/animate.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="app/css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="app/js/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="app/js/materialize.min.js" type="text/javascript"></script>
@@ -52,7 +53,32 @@
   </head>
 
   <body ng-app="app">
-    <div ng-show=""></div>
+    <!--preloader-->
+    <div class="se-pre-con"></div>
+    <!--nav bar-->
+    <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper white" >
+            <a href="index.html" class="brand-logo "><img src="app/images/logo.png" id="enactus-logo" alt="enactus"></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="https://enactus-iitr.github.io">Home</a></li>
+              <li><a href="pages/about.html">About</a></li>
+              <li><a href="pages/projects.html">Projects</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/about.html">About</a></li>
+              <li><a href="pages/projects.html">Projects</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+
+
 
   </body>
 </html>

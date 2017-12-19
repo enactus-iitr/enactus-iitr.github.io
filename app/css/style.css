@@ -1,6 +1,20 @@
 /*
 Custom CSS
 */
+.enactus-color{
+	background-color: #fdc03c;
+	color: #232D39;
+
+}
+#enactus-logo{
+	width: 100px;
+	height:40px;
+
+}
+.li{
+	color: #232D39;
+}
+
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
