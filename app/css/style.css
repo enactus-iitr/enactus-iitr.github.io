@@ -11,9 +11,16 @@ Custom CSS
 	height:40px;
 
 }
-.li{
+li a{
 	color: #232D39;
 }
+.enactusHighlight {
+    color: #fdc03c;
+    font-style: normal;
+    font-weight: 700;
+		z-index:999;
+}
+
 
 
 .no-js #loader { display: none;  }
@@ -88,38 +95,6 @@ Custom CSS
     background: url("../images/nationals.jpg");
 }*/
 
-li a, .dropbtn {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #312934 ;
-}
-
-li.dropdown {
-    display: block;
-    align-self: center;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffc437;
-    padding:38px 20px 36px 20px;
-}
-
-.dropdown-content a {
-    display: block;
-    text-align: center;
-}
-
-.dropdown-content a:hover {background-color: #000000}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 hr{
     color: #ffc437;
@@ -269,11 +244,7 @@ span.text-content span {
 div.img-wrapper a:hover span.text-content {
     opacity: 1;
 }
-.enactusHighlight {
-    color: #ffc437;
-    font-style: normal;
-    font-weight: 700;
-}
+
 .action_section {
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/take_action_bg.png") no-repeat scroll 0 0 / cover;
     padding-bottom: 55px;
