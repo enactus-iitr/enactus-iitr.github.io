@@ -8,18 +8,20 @@
   <link rel="shortcut icon" href="app/images/favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app/js/wow.min.js"></script>
   <script src="app/js/jquery-2.1.0.min.js"></script>
   <script src="app/js/jquery.particleground.min.js"></script>
+  <script src="app/js/jquery.particleground.min.js"></script>
   <link href="app/css/custom.css" rel="stylesheet" type="text/css">
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top transparent">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,11 +29,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage"><img src="app/images/logo.png" id="enactus-logo" alt="enactus" width="100" height="30px"></a>
+      <a class="navbar-brand" href="#myPage"><img src="app/images/logo.png" id="enactus-logo" alt="enactus" width="100" height="25px"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
+        <li><a href="#particles">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -40,37 +42,40 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center" id=particles>
+<div class="jumbotron text-center" id='particles'>
 
-	<div class="quote">
+	<div>
 		<!--&ldquo; Random quote about bringing change and all that. Lorem ipsum dolor sit amet. &rdquo;-->
-		Seeing possibilities. Taking action. Enabling progress.
+		<h1 class="quote float-center">Seeing possibilities &middot; Taking action &middot; Enabling progress</h1>
 	</div>
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<div id="about" class="container">
   <div class="row">
-    <center><h1 class="center"><span class="enactusHighlight">EN</span>•
-  <span class="enactusHighlight">ACT</span>•
-  <span class="enactusHighlight">US</span></h1></center>
-  <div class="row" style="color:#232D39">
-	<div class="column">
-		<h3><span class="enactusHighlight">En</span><strong style="color:#232D39">trepreneurial<strong></h3>
-		<br>
-	        <h3 style="color:#232D39">Having the perspective to see an opportunity and the talent to create value from that opportunity.</h3>
-	</div>
-	<div class="column">
-		<h3><span class="enactusHighlight">Act</span><strong style="color:#232D39">ion</strong></h3>
-		<br>
-		<h3 style="color:#232D39">The willingness to do something and the commitment to see it through even when the outcome is not guaranteed.</h3>
-	</div>
-	<div class="column">
-		<h3><span class="enactusHighlight">Us</span></h3>
-		<br>
-		<h3 style="color:#232D39">A group of people who see themselves connected in some important way; individuals that are part of a greater whole.</h3>
-	</div>
+    <center><h1 class="center"><span class="enactusHighlight">EN</span><i class="material-icons">fiber_manual_record</i>
+      <span class="enactusHighlight">ACT</span><i class="material-icons">fiber_manual_record</i>
+      <span class="enactusHighlight">US</span></h1></center>
+      <hr style="background:#fdc03c;width:200px;height:2px;">
   </div>
+      <div class="row" style="color:#232D39">
+      	<div class="col-sm-12 col-md-4 col-lg-4">
+      		<h3><span class="enactusHighlight">En</span><strong style="color:#232D39;font-size:40px;">trepreneurial<strong></h3>
+            <br>
+      	        <h3 style="color:#232D39">Having the perspective to see an opportunity and the talent to create value from that opportunity.</h3>
+      	</div>
+      	<div class="col-sm-12 col-md-4 col-lg-4">
+      		<h3><span class="enactusHighlight">Act</span><strong style="color:#232D39;font-size:40px;">ion</strong></h3>
+          <br>
+      		<h3 style="color:#232D39">The willingness to do something and the commitment to see it through even when the outcome is not guaranteed.</h3>
+      	</div>
+      	<div class="col-sm-12 col-md-4 col-lg-4">
+      		<h3><span class="enactusHighlight">Us</span></h3>
+          <br>
+      		<h3 style="color:#232D39">A group of people who see themselves connected in some important way; individuals that are part of a greater whole.</h3>
+      	</div>
+    </div>
+
 </div>
 
 <div class="container-fluid bg-grey">
@@ -312,11 +317,11 @@ To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
-<footer class="container-fluid text-center">
+<footer class="container-fluid text-right">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+
 </footer>
 
 <script>

@@ -6,7 +6,6 @@ $(document).ready(function(){
   function hideURLbar() {
     window.scrollTo(0, 1);
   };
-  $(".se-pre-con").fadeOut(500);
-
-  $(".button-collapse").sideNav();
+  
+});
 });
