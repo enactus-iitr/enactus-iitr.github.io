@@ -5,18 +5,53 @@
   <title> Enactus, IIT ROORKEE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Faacebook meta tags-->
+  <meta property="og:url" content="https://enactus-iitr.github.io" />
+  <meta property="og:type" content="Website" />
+  <meta property="og:title" content="Enactus, IIT Roorkee Chapter" />
+  <meta property="og:description" content="Enactus is an international non-profit organization that nurtures managerial skills of students. It channelizes the energy of these future leaders towards constructing innovative business models that improve the quality of life and standard of living of the people in need. Enactus creates and implements community empowerment projects around the globe. The experience not only transforms lives, but also helps students develop the skills that are essential in this challenging, corporate world.
+  Enactus is now collaborating with IIT Roorkee to expand this network across the globe." />
+  <meta name="keywords" content="Enactus,Enactus IITR,IITR,Indian,Institute,Tech,Technology,Roorkee,Enactus India,IIT,Enactus SNAP,SNAP,Indian Institute Of Technology" />
+  <meta property="og:image" content="app/images/logo.png" />
+  <meta name="theme-color" content="#fdc03c">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="Website">
+  <meta name="twitter:site" content="https://enactus-iitr.github.io">
+  <meta name="twitter:title" content="Enactus, IIT Roorkee Chapter">
+  <meta name="twitter:description" content="Enactus is an international non-profit organization that nurtures managerial skills of students. It channelizes the energy of these future leaders towards constructing innovative business models that improve the quality of life and standard of living of the people in need. Enactus creates and implements community empowerment projects around the globe. The experience not only transforms lives, but also helps students develop the skills that are essential in this challenging, corporate world.
+  Enactus is now collaborating with IIT Roorkee to expand this network across the globe.">
+  <meta name="twitter:creator" content="@ashishsinhajsr">
+  <-- Twitter Summary card images must be at least 120x120px -->
+  <meta name="twitter:image" content="app/images/logo.png">
+
   <link rel="shortcut icon" href="app/images/favicon.ico" />
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="app/css/custom.css" rel="stylesheet" type="text/css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app/js/wow.min.js"></script>
   <script src="app/js/jquery-2.1.0.min.js"></script>
   <script src="app/js/jquery.particleground.min.js"></script>
   <script src="app/js/jquery.particleground.min.js"></script>
-  <link href="app/css/custom.css" rel="stylesheet" type="text/css">
+  <script src="app/js/angular.min.js"></script>
+  <script src="app/js/angular-route.min.js"></script>
+
+  <!-- google-analytics -->
+  <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-98666071-1', 'auto');
+            ga('send', 'pageview');
+  </script>
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -97,9 +132,9 @@
 </div>-->
 
 <!-- Container (PROJECTS Section) -->
-<div id="projects" class="container-fluid text-center">
+<div id="projects" class="container-fluid text-center bg-grey">
   <h2>Projects</h2>
-  <h4>What we <span style="color:#fdc03c;">DO</span></h4>
+  <h4>What we <span style="color:#fdc03c;font-weight:900;z-index:999;">DO</span></h4>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
@@ -143,7 +178,7 @@
     </div>
   </div>
 
-  <div class="row slideanim">
+  <div class="row slideanim bg-grey">
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
@@ -187,7 +222,7 @@
 </div>
 
 <!-- Container (TEAM Section) -->
-<div id="team" class="container-fluid text-center bg-grey">
+<div id="team" class="container-fluid text-center">
   <h2>Our Team</h2>
   <br>
   <div id="myCarousel" class="carousel slide text-center slideanim" data-ride="carousel">
@@ -196,18 +231,28 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner slideanim" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+        <div class="team-body">
+          <img src="app/images/me2.jpg" class="team-member">
+          <h4 class="member-name">Ashish Sinha</h4>
+        </div>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+        <div class="team-body">
+          <img src="app/images/me2.jpg" class="team-member">
+          <h4 class="member-name">Ashish Sinha</h4>
+        </div>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+        <div class="team-body">
+          <img src="app/images/me2.jpg" class="team-member">
+          <h4 class="member-name">Ashish Sinha</h4>
+        </div>
       </div>
     </div>
 
@@ -225,44 +270,46 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <img id="contact-logo" src="app/images/logo_new.png" width="150" height="40">
+        <ul >
+          <li>
+            <h4><span style="color:#fdc03c;font-size:24px">En</span><span style="color:#fff">trepreneurial</span></h4>
+          </li>
+          <li>
+            <h4><span style="color:#fdc03c;font-size:24px">Ac</span><span style="color:#fff">ion</span></h4>
+          </li>
+          <li>
+            <h4><span style="color:#fdc03c;font-size:24px">Us</span></h4>
+          </li>
+        </ul>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
+
+    <div class="col-sm-4">
+      <h3 style="color:#fff;">Get Connected</h3>
+
+      <br>
+      <h4><a href="https://fb.com/i.ashish.sinha" target="_blank"><img src="app/images/fb.png" class="social-btn"><span class="social-link"> Facebook</a></span></h4>
+      <h4><a href="https://twitter.com/ashishsinhajsr"  target="_blank"><img src="app/images/twitter.png" class="social-btn"><span class="social-link"> Twitter</a></span></h4>
+      <h4><a href="https://github.com/sinashish "  target="_blank"><img src="app/images/github.png" class="social-btn"><span class="social-link"> Github</a></span></h4>
+      <h4><a href="https://linkedin.com/sinashish"  target="_blank"><img src="app/images/linkedin.png" class="social-btn"><span class="social-link"> LinkedIn</a></span></h4>
+
     </div>
+    <div class="col-sm-4">
+      <h3 style="color:#fff;">Get Connected</h3>
+
+      <br>
+      <img src="app/images/iitr.jpg" class="iitr">
+      <h4 class="social-link">IIT ROORKEE</h4>
+      <h4 class="social-link">Uttarakhand, 247667</h4>
+      <h4 class="social-link">ashishsinha108@gmail.com</h4>
+      <h4 class="social-link">+91 8797 465 974</h4>
+    </div>
+
   </div>
 </div>
-
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
+<div></div>
 <script type="text/javascript">
 	$(document).ready(function() {
 	  $('#particles').particleground({
@@ -271,19 +318,14 @@ marker.setMap(map);
 	new WOW().init();
 	});
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
+<!--
 <footer class="container-fluid text-right">
-  <a href="#myPage" title="To Top">
+  <a href="#myPage" title="To Top" id='top'>
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-
 </footer>
-
+-->
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
