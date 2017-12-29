@@ -14,10 +14,17 @@ font-size: 16px;
 .social-btn{
 width: 40px;
 height: 40px;
+border-radius: 50%;
 }
-.social-link:hover{
-color:#fdc03c;
+.social-btn:hover{
+background-color:#fdc03c;
 
+}
+.links{
+  color:#fff;
+}
+.links:hover{
+  color:#fdc03c;
 }
 .member-name{
 color: #232D39;
@@ -279,6 +286,13 @@ footer .glyphicon {
 @media screen and (max-width: 480px) {
 .logo {
     font-size: 150px;
+}
+
+.grid-item {
+  width: 200px;
+}
+.grid-item--width2 {
+  width: 400px;
 }
 #particles{
   background-image: url(../images/mobile-cover.jpg);

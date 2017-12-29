@@ -2,6 +2,12 @@ $(document).ready(function(){
   addEventListener("load", function() {
     setTimeout(hideURLbar, 0);
   }, false);
+  
+  $('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+      columnWidth: 200
+    });
 
   function hideURLbar() {
     window.scrollTo(0, 1);

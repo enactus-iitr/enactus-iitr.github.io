@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
 
   <title> Enactus, IIT ROORKEE</title>
@@ -37,14 +37,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app/js/wow.min.js"></script>
-  <script src="app/js/masonry.pkgd.min.js"></script>
   <script src="app/js/jquery-2.1.0.min.js"></script>
   <script src="app/js/typed.js"></script>
   <script src="app/js/jquery.particleground.min.js"></script>
   <script src="app/js/jquery.particleground.min.js"></script>
   <script src="app/js/angular.min.js"></script>
-  <script src="app/js/main.js"></script>
   <script src="app/js/angular-route.min.js"></script>
+  <script src="app/js/main.js"></script>
+  <script src="app/js/masonry.pkgd.min.js"></script>
+  <script src="app/js/app.js"></script>
 
   <!-- google-analytics -->
   <script type="text/javascript">
@@ -57,9 +58,9 @@
   </script>
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
 
-<nav class="navbar navbar-default navbar-fixed-top transparent">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -74,8 +75,7 @@
         <li><a href="#particles">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#team">TEAM</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#news">NEWS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -83,15 +83,13 @@
 </nav>
 
 <div class="jumbotron text-center" id='particles'>
-
-
 </div>
 
 <!-- Container (About Section) -->
 
 <div id="about" class="container">
   <div class="row">
-      <center><h1 class=" enactusHighlight element">#</h1></center>
+      <center><h1 class="enactusHighlight element">#</h1></center>
       <hr style="background:#fdc03c;width:200px;height:2px;">
       <center><h4 style="color:#fdc03c">#Socially_Impactful</h4></center>
   </div>
@@ -132,7 +130,7 @@
 </div>-->
 
 <!-- Container (PROJECTS Section) -->
-<div id="projects" class="container-fluid text-center bg-grey">
+  <div id="projects" class="container-fluid text-center bg-grey">
   <h2>Projects</h2>
   <h4>What we <span style="color:#fdc03c;font-weight:900;z-index:999;">DO</span></h4>
   <br>
@@ -222,8 +220,8 @@
 </div>
 
 <!-- Container (TEAM Section) -->
-<div id="team" class="container-fluid text-center">
-  <h2>Our Team</h2>
+  <div id="team" class="container-fluid text-center">
+  <h2>Achievements</h2>
   <br>
   <div id="myCarousel" class="carousel slide text-center slideanim" data-ride="carousel">
     <!-- Indicators -->
@@ -239,7 +237,7 @@
       <div class="item active">
         <div class="team-body">
           <img src="app/images/me2.jpg" class="team-member">
-          <h4 class="member-name">Ashish Sinha</h4>
+          <h4 class="member-name">Some random text about achievements.</h4>
         </div>
       </div>
       <div class="item">
@@ -268,8 +266,10 @@
   </div>
 </div>
 
+
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
+
   <div class="row slideanim">
     <div class="col-sm-4">
         <img id="contact-logo" src="app/images/logo_new.png" width="150" height="40">
@@ -287,19 +287,20 @@
     </div>
 
     <div class="col-sm-4">
-      <h3 style="color:#fff;">Get Connected</h3>
-
-      <br>
-      <h4><a href="https://fb.com/i.ashish.sinha" target="_blank"><img src="app/images/fb.png" class="social-btn"><span class="social-link"> Facebook</a></span></h4>
-      <h4><a href="https://twitter.com/ashishsinhajsr"  target="_blank"><img src="app/images/twitter.png" class="social-btn"><span class="social-link"> Twitter</a></span></h4>
-      <h4><a href="https://github.com/sinashish "  target="_blank"><img src="app/images/github.png" class="social-btn"><span class="social-link"> Github</a></span></h4>
-      <h4><a href="https://linkedin.com/sinashish"  target="_blank"><img src="app/images/linkedin.png" class="social-btn"><span class="social-link"> LinkedIn</a></span></h4>
-
+      <h3 style="color:#fdc03c;">Get Connected</h3>
+      <div class="col-sm-12">
+        <a href="https://fb.com/i.ashish.sinha" target="_blank"><img src="app/images/fb-icon-bw.png" class="social-btn" alt="facebook"></a>
+        <a href="https://twitter.com/ashishsinhajsr"  target="_blank"><img src="app/images/twitter_bw.png" class="social-btn" alt="twitter"></a>
+        <a href="https://github.com/_ashish.jsr"  target="_blank"><img src="app/images/insta.png" class="social-btn" alt="instagram"></a>
+        <a href="https://linkedin.com/sinashish"  target="_blank"><img src="app/images/linkedin_icon.png" class="social-btn" alt="linkedin"></a>
+      </div>
+      <h4><a href="app/pages/team.html" class="links">Our Team</a></h4>
+      <h4><a href="app/pages/gallery.html" class="links">Gallery</a></h4>
     </div>
-    <div class="col-sm-4">
-      <h3 style="color:#fff;">Meet Us</h3>
 
-      <br>
+    <div class="col-sm-3">
+      <h3 style="color:#fdc03c;">Meet Us</h3>
+
       <img src="app/images/iitr.jpg" class="iitr">
       <h4 class="social-link">IIT ROORKEE</h4>
       <h4 class="social-link">Uttarakhand, 247667</h4>
