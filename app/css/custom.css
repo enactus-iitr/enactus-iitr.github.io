@@ -283,13 +283,21 @@ footer .glyphicon {
     margin-bottom: 35px;
 }
 }
+#gallery-item{
+  border-radius: 1px #fdc03c solid;
+
+  width: 300px;
+  height: 200px;
+}
+
 @media screen and (max-width: 480px) {
 .logo {
     font-size: 150px;
 }
 
-.grid-item {
+.grid-item,.grid-sizer {
   width: 200px;
+  height: 200px;
 }
 .grid-item--width2 {
   width: 400px;

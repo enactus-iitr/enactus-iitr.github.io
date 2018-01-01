@@ -2,11 +2,12 @@ $(document).ready(function(){
   addEventListener("load", function() {
     setTimeout(hideURLbar, 0);
   }, false);
-  
+
   $('.grid').masonry({
       // options
-      itemSelector: '.grid-item',
-      columnWidth: 200
+      itemSelector:'200px' ,
+      columnWidth: '200px',
+      percentPosition: true
     });
 
   function hideURLbar() {
