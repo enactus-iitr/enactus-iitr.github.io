@@ -1,57 +1,32 @@
 // external js: isotope.pkgd.js
 
-
+var buttonFilter;
 // init Isotope
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows',
-  getSortData: {
-    name: '.name',
-    symbol: '.symbol',
-    number: '.number parseInt',
-    category: '[data-category]',
-    weight: function( itemElem ) {
-      var weight = $( itemElem ).find('.weight').text();
-      return parseFloat( weight.replace( /[\(\)]/g, '') );
-    }
-  },
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.grid-sizer'
+
+  filter: function() {
+    var $this = $(this);
+    var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+    return buttonResult;
   }
 
 });
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-}); 
 
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.name').text();
-    return name.match( /ium$/ );
-  }
-};
 
-// bind filter button click
 $('#filters').on( 'click', 'button', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
+  buttonFilter = $( this ).attr('data-filter');
+  $grid.isotope();
 });
 
-// bind sort button click
-$('#sorts').on( 'click', 'button', function() {
-  var sortByValue = $(this).attr('data-sort-by');
-  $grid.isotope({ sortBy: sortByValue });
+
+$grid.on( 'click', '.element-item', function() {
+  // change size of item by toggling gigante class
+  $( this ).toggleClass('gigante');
+  $grid.isotope('layout');
 });
+
 
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
@@ -61,3 +36,19 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
+
+
+// debounce so filtering doesn't happen every millisecond
+function debounce( fn, threshold ) {
+  var timeout;
+  return function debounced() {
+    if ( timeout ) {
+      clearTimeout( timeout );
+    }
+    function delayed() {
+      fn();
+      timeout = null;
+    }
+    setTimeout( delayed, threshold || 100 );
+  };
+}

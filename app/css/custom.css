@@ -347,8 +347,11 @@ footer .glyphicon {
   color: white;
 }
 
-
-
+.element-item.gigante {
+  width: 600px;
+  height: 500px;
+  background: #F80;
+}
 /* ---- button-group ---- */
 
 .button-group {
