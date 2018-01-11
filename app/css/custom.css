@@ -295,13 +295,8 @@ footer .glyphicon {
     font-size: 150px;
 }
 
-.grid-item,.grid-sizer {
-  width: 200px;
-  height: 200px;
-}
-.grid-item--width2 {
-  width: 400px;
-}
+* { box-sizing: border-box; }
+
 #particles{
   background-image: url(../images/mobile-cover.jpg);
   width: 100%;
@@ -321,4 +316,86 @@ footer .glyphicon {
   overflow: hidden;
   background-size: cover;
 }
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #fff;
+  color: #232D39;
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 1px #fdc03c solid;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fdc03c;
+
+  color: #232D39;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #fdc03c;
+
+}
+
+.button.is-checked {
+  color: white;
+}
+
+
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+.grid-sizer,
+.grid-item { width: 20%; }
+.grid-item--width2 { width: 300px; }
+.grid-item--height2 { height: 300px; }
+
+/* ---- isotope ---- */
+
+/* clear fix */
+
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+
+.gallery-img{
+  width: 200px;
+  height: 200px;
+  border: 1px #fdc03c solid;
+  position: relative;
 }

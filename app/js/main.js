@@ -3,12 +3,6 @@ $(document).ready(function(){
     setTimeout(hideURLbar, 0);
   }, false);
 
-  $('.grid').masonry({
-      // options
-      itemSelector:'200px' ,
-      columnWidth: '200px',
-      percentPosition: true
-    });
 
   function hideURLbar() {
     window.scrollTo(0, 1);
@@ -33,7 +27,7 @@ $(document).ready(function(){
          // show cursor
          showCursor: false,
          // character for cursor
-         cursorChar: "|",
+         cursorChar: "",
          // attribute to type (null == text)
          attr: null,
          // either html or text
