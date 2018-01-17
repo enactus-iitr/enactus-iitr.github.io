@@ -34,20 +34,29 @@ font-size: 18px;
 display: inline fixed;
 float: right;
 }
-.team-body{
+#team-body{
+
+    height: 100%;
+    position: relative;
 
 }
 .team-member{
-width: 200px;
-border: 2px solid #fdc03c;
-height: 200px;
-border: 2px solid #fdc03c;
-border-radius:50 !important;
+width:360;
+height:150px;
 transition: box-shadow 0.5s;
+background-size: cover;
 }
-.team-member:hover{
-background-color: #232D39;
-backface-visibility: 0.5;
+.member-name{
+  font-size: 24px;
+  font-family: cursive;
+}
+.team-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.team-btn:hover{
+  background-color: #fdc03c;
 }
 #contact{
 background-color: #232D39;
