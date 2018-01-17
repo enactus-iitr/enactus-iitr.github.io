@@ -40,6 +40,12 @@ float: right;
     position: relative;
 
 }
+.news-img{
+  width: 200px;
+  height:200px;
+  border: 1px solid #fdc03c;
+
+}
 .team-member{
 width:360;
 height:150px;
