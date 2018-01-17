@@ -43,6 +43,7 @@ float: right;
 .team-member{
 width:360;
 height:150px;
+border: 1px solid #fdc03c;
 transition: box-shadow 0.5s;
 background-size: cover;
 }
