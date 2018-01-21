@@ -34,7 +34,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="app/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="http://vjs.zencdn.net/6.6.0/video-js.css" rel="stylesheet">
 
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app/js/wow.min.js"></script>
@@ -76,47 +79,59 @@
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="app/pages/gallery.html">GALLERY</a></li>
         <li><a href="#news">NEWS</a></li>
-	<li><a href="app/pages/blog.html">BLOG</a></li>
+	      <li><a href="#">BLOG</a></li>
         <li><a href="#contact">CONTACT</a></li>
-	<li><a href="app/pages/team.html" ">TEAM</a></li>
+	       <li><a href="app/pages/team.html">TEAM</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- <div class="jumbotron text-center" id='particles'>
-</div> -->
-<div>	
-	<video loop="" muted="" autoplay="" preload="" poster="http://enactus.s3.amazonaws.com/assets/enactus-org/large/video-frame.png" style="min-width:100%;min-height:100%;width:auto;height:auto;z-index:0;">
+<!--<div class="jumbotron text-center" id='particles'>
+</div>-->
+<div id='homePage'>
+
+	<video class="video-container" loop="" muted="" autoplay="" preload="" poster="http://enactus.s3.amazonaws.com/assets/enactus-org/large/video-frame.png" style="min-width:100%;min-height:100%;width:auto;height:auto;z-index:0;">
 		<source src="http://enactus.s3.amazonaws.com/assets/enactus-org/large/home-page/video/sdg-video.webm" type="video/webm">
 		<source src="http://enactus.s3.amazonaws.com/assets/enactus-org/large/home-page/video/sdg-video-720.mp4" type="video/mp4">
-		<source src="http://enactus.s3.amazonaws.com/assets/enactus-org/large/home-page/video/sdg-video.ogv" type="video/ogg">
+    <source src="http://enactus.s3.amazonaws.com/assets/enactus-org/large/home-page/video/sdg-video.ogv" type="video/ogg">
 	</video>
+  <div class="container">
+  <div class="row overlay-desc col-lg-12 col-sm-12">
+      <h1 style="text-transform:uppercase;">
+        <br>
+        <span class="normal">We believe investing in students who take</span><br>
+        <span class="enactusHighlight">En</span><span class="normal">trepreneurial</span><br>
+        <span class="enactusHighlight">ACT</span><span  class="normal">ION FOR OTHERS</span><br>
+        <span  class="normal">CREATES A BETTER WORLD FOR</span><br>
+        <span class="enactusHighlight">Us </span><span  class="normal"> All</span>
+        <br><br>
+        <p class="homeText">World leaders have announced 17 Global Goals for sustainable development for all countries. For all people.</p>
+
+        <center><a href="http://enactus.org/globalgoals/"><button class="btn btn-lg">Read More</button></a></center>
+
+      </h1>
+  </div>
+</div>
+
 </div>
 <!-- Container (About Section) -->
 
 <div id="about" class="container">
   <div class="row">
-      <center><h1 class="enactusHighlight element">#</h1></center>
-      <hr style="background:#fdc03c;width:200px;height:2px;">
-      <center><h4 style="color:#fdc03c">#Socially_Impactful</h4></center>
+    <h2 class="aboutText">We are a community of student, academic, and business leaders.</h2>
   </div>
-      <div class="row" style="color:#232D39">
-      	<div class="col-sm-12 col-md-4 col-lg-4">
-      		<h3><span class="enactusHighlight">En</span><strong style="color:#232D39;font-size:40px;">trepreneurial<strong></h3>
-            <br>
-      	        <h3 style="color:#232D39">Having the perspective to see an opportunity and the talent to create value from that opportunity.</h3>
+  <div class="row" style="color:#232D39">
+      	<div class="col-sm-12 col-md-6 col-lg-6">
+          <iframe src="Enactus-About.mp4" width="840" height="420" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+      	</div>
+      	<div class="col-sm-12 col-md-6 col-lg-6">
+
       	</div>
       	<div class="col-sm-12 col-md-4 col-lg-4">
-      		<h3><span class="enactusHighlight">Act</span><strong style="color:#232D39;font-size:40px;">ion</strong></h3>
-          <br>
-      		<h3 style="color:#232D39">The willingness to do something and the commitment to see it through even when the outcome is not guaranteed.</h3>
+
       	</div>
-      	<div class="col-sm-12 col-md-4 col-lg-4">
-      		<h3><span class="enactusHighlight">Us</span></h3>
-          <br>
-      		<h3 style="color:#232D39">A group of people who see themselves connected in some important way; individuals that are part of a greater whole.</h3>
-      	</div>
+        <br>
     </div>
 
 </div>

@@ -195,10 +195,42 @@ font-size: 18px;
 }
 .enactusHighlight {
 color: #fdc03c;
-font-size: 60px;
-font-style: normal;
+font-size: 7vh;
+font-style: Nobile;
 font-weight:700;
-z-index:999;
+
+}
+.homeText{
+  color: #fff;
+  font-size: 2vh;
+  font-family: Nobile;
+  text-align: center;
+}
+.aboutText{
+  color: #232D39;
+  font-size: 2vh;
+  font-family: Nobile;
+  text-align: center;
+}
+.normal {
+color: #fff;
+font-size: 6vh;
+font-style: Nobile;
+font-weight:700;
+
+}
+.btn{
+  align-self: center;
+  margin: 15px 0;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fdc03c;
+}
+.btn:hover{
+  align-self: center;
+  margin: 15px 0;
+    background-color:#fdc03c;
+    color: #232D39;
 }
 .panel-footer .btn {
   margin: 15px 0;
@@ -313,9 +345,11 @@ footer .glyphicon {
 }
 
 * { box-sizing: border-box; }
-
+#homePage{
+  opacity: inherit;
+}
 #particles{
-  background-image: url(../images/mobile-cover.jpg);
+
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -326,13 +360,30 @@ footer .glyphicon {
 .logo {
     font-size: 150px;
 }
-#particles{
+#homePage{
   background-image: url(../images/mobile-cover.jpg);
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow:  hidden ;
   background-size: cover;
+
 }
+}
+.video-container {
+  position: relative;
+}
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+.overlay-desc {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---- button ---- */
