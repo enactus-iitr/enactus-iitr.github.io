@@ -3,6 +3,12 @@ $(document).ready(function(){
     setTimeout(hideURLbar, 0);
   }, false);
 
+  $('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
+
 
   function hideURLbar() {
     window.scrollTo(0, 1);

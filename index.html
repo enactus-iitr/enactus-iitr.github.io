@@ -34,10 +34,16 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="app/css/custom.css" rel="stylesheet" type="text/css">
-  <link href="http://vjs.zencdn.net/6.6.0/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+  <style type="text/css">
+    .vjs-default-skin .vjs-play-progress,
+    .vjs-default-skin .vjs-volume-level { background-color: #b7cc66 }
+    .vjs-default-skin .vjs-control-bar { font-size: 143% }
+  </style>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-  <!-- If you'd like to support IE8 -->
-  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app/js/wow.min.js"></script>
@@ -123,12 +129,21 @@
   </div>
   <div class="row" style="color:#232D39">
       	<div class="col-sm-12 col-md-6 col-lg-6">
-          <iframe src="Enactus-About.mp4" width="840" height="420" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-      	</div>
-      	<div class="col-sm-12 col-md-6 col-lg-6">
+          <video id="MY_VIDEO_1" class="video-js vjs-default-skin vjs-big-play-centered" controls
+             preload="auto" width="840" height="420" poster="app/images/enactus-iitr.png"
+             data-setup="{"controls": true, "autoplay": false, "preload": "auto"}">
+             <source src="Enactus-About.mp4" type='video/mp4'>
+             <source src="Enactus-About.webm" type='video/webm'>
+             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+           </video>
 
       	</div>
-      	<div class="col-sm-12 col-md-4 col-lg-4">
+      	<div class="col-sm-12 col-md-3 col-lg-3">
+          <h1 class="aboutText">Vision</h1>
+
+      	</div>
+      	<div class="col-sm-12 col-md-3 col-lg-3">
+          <h1 class="aboutText">Mision</h1>
 
       	</div>
         <br>
@@ -157,6 +172,81 @@
   <h2>Projects</h2>
   <h4>What we <span style="color:#fdc03c;font-weight:900;z-index:999;">DO</span></h4>
   <br>
+
+
+
+    <div class="carousel"
+       data-flickity='{ "lazyLoad": true }' id="fliticky">
+      <div class="carousel-cell">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Basic</h1>
+          </div>
+          <div class="panel-body">
+            <p>Write something here</p>
+          </div>
+          <div class="panel-footer">
+            <a href="#" target="_blank"><button class="btn btn-lg">Know More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Basic</h1>
+          </div>
+          <div class="panel-body">
+            <p>Write something here</p>
+          </div>
+          <div class="panel-footer">
+            <a href="#" target="_blank"><button class="btn btn-lg">Know More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Basic</h1>
+          </div>
+          <div class="panel-body">
+            <p>Write something here</p>
+          </div>
+          <div class="panel-footer">
+            <a href="#" target="_blank"><button class="btn btn-lg">Know More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Basic</h1>
+          </div>
+          <div class="panel-body">
+            <p>Write something here</p>
+          </div>
+          <div class="panel-footer">
+            <a href="#" target="_blank"><button class="btn btn-lg">Know More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Basic</h1>
+          </div>
+          <div class="panel-body">
+            <p>Write something here</p>
+          </div>
+          <div class="panel-footer">
+            <a href="#" target="_blank"><button class="btn btn-lg">Know More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">

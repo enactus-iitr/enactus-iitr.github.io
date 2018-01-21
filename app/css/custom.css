@@ -193,12 +193,27 @@ font-size: 18px;
   color: #aaa;
   font-size: 14px;
 }
+
 .enactusHighlight {
 color: #fdc03c;
 font-size: 7vh;
 font-style: Nobile;
 font-weight:700;
 
+}
+
+/* carousel height */
+.carousel {
+  height: 50vh;
+
+}
+
+/* cell inherit height from carousel */
+.carousel-cell {
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  margin: 20px;
 }
 .homeText{
   color: #fff;
@@ -207,8 +222,8 @@ font-weight:700;
   text-align: center;
 }
 .aboutText{
-  color: #232D39;
-  font-size: 2vh;
+  color: #fdc03c;
+  font-size: 3vh;
   font-family: Nobile;
   text-align: center;
 }
