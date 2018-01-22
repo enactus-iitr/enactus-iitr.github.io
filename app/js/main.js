@@ -3,10 +3,17 @@ $(document).ready(function(){
     setTimeout(hideURLbar, 0);
   }, false);
 
-  $('.main-carousel').flickity({
+  $('.carousel').flickity({
     // options
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    autoplay:true,
+    adaptiveHeight: true,
+    imagesLoaded: true,
+    freeScroll: true,
+    wrapAround: true,
+    setGallerySize: false,
+    watchCSS: true
   });
 
 

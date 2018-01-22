@@ -35,14 +35,13 @@ display: inline fixed;
 float: right;
 }
 #team-body{
-
     height: 100%;
     position: relative;
 
 }
 .news-img{
-  width: 200px;
-  height:200px;
+  width: 240px;
+  height:240px;
   border: 1px solid #fdc03c;
 
 }
@@ -201,20 +200,61 @@ font-style: Nobile;
 font-weight:700;
 
 }
-
+.carousel .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
 /* carousel height */
 .carousel {
   height: 50vh;
 
 }
-
 /* cell inherit height from carousel */
 .carousel-cell {
-  height: 100%;
-  width: 50%;
-  padding: 10px;
-  margin: 20px;
+  width: 50%; /* full width */
+  height: 100%; /* height of carousel */
+  margin: 10px;
 }
+.flickity-viewport {
+  transition: height 0.2s;
+}
+.flickity-page-dots {
+  bottom: -22px;
+}
+
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+@media screen and ( max-width: 480px ) {
+  /* full-width cells for smalller devices */
+  .carousel-cell { width: 100%; }
+}
+
 .homeText{
   color: #fff;
   font-size: 2vh;

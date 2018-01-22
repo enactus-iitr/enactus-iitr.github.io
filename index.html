@@ -83,11 +83,11 @@
       <ul class="nav navbar-nav navbar-right">
        <li><a href="#about">ABOUT</a></li>
         <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="app/pages/gallery.html">GALLERY</a></li>
         <li><a href="#news">NEWS</a></li>
-	      <li><a href="#">BLOG</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-	       <li><a href="app/pages/team.html">TEAM</a></li>
+	      <li><a href="#contact">CONTACT</a></li>
+	      <li><a href="team.html">TEAM</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="https://enactus-iitr.github.io/blog">BLOG</a></li>
       </ul>
     </div>
   </div>
@@ -244,7 +244,7 @@
       </div>
     </div>
 
-
+<!--
 
 
   <div class="row slideanim">
@@ -329,74 +329,65 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 </div>
 
 <!-- Container (TEAM Section) -->
   <div id="news" class="container-fluid text-center">
-  <h2 style="padding-right:10px;">News</h2>
+  <h2 >News</h2>
   <br>
-  <div id="myCarousel" class="carousel slide text-center slideanim" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
 
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner slideanim" role="listbox">
+  <div class="carousel"
+     data-flickity='{ "lazyLoad": true }' id="fliticky">
+    <div class="carousel-cell">
       <div class="item active">
         <div class="team-body">
           <img src="app/images/me2.jpg" class="news-img">
           <h4 class="member-name">Some random text about achievements.</h4>
         </div>
       </div>
-      <div class="item">
+    </div>
+    <div class="carousel-cell">
+      <div class="item active">
         <div class="team-body">
           <img src="app/images/me2.jpg" class="news-img">
-          <h4 class="member-name">Ashish Sinha</h4>
-        </div>
-      </div>
-      <div class="item">
-        <div class="team-body">
-          <img src="app/images/me2.jpg" class="news-img">
-          <h4 class="member-name">Ashish Sinha</h4>
+          <h4 class="member-name">Some random text about achievements.</h4>
         </div>
       </div>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="carousel-cell">
+      <div class="item active">
+        <div class="team-body">
+          <img src="app/images/me2.jpg" class="news-img">
+          <h4 class="member-name">Some random text about achievements.</h4>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="item active">
+        <div class="team-body">
+          <img src="app/images/me2.jpg" class="news-img">
+          <h4 class="member-name">Some random text about achievements.</h4>
+        </div>
+      </div>
+    </div>
   </div>
+
 </div>
 
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
 <button id="rzp-button1">Donate</button>
-  <div class="row slideanim">
+  <div class="row">
     <div class="col-sm-4">
         <img id="contact-logo" src="app/images/logo_new.png" width="150" height="40">
-        <ul >
-          <li>
+
             <h4><span style="color:#fdc03c;font-size:24px">En</span><span style="color:#fff">trepreneurial</span></h4>
-          </li>
-          <li>
+
             <h4><span style="color:#fdc03c;font-size:24px">Ac</span><span style="color:#fff">ion</span></h4>
-          </li>
-          <li>
+
             <h4><span style="color:#fdc03c;font-size:24px">Us</span></h4>
-          </li>
-        </ul>
     </div>
 
     <div class="col-sm-4">
@@ -407,12 +398,12 @@
         <a href="https://github.com/_ashish.jsr"  target="_blank"><img src="app/images/insta.png" class="social-btn" alt="instagram"></a>
         <a href="https://linkedin.com/sinashish"  target="_blank"><img src="app/images/linkedin_icon.png" class="social-btn" alt="linkedin"></a>
       </div>
-      <h4><a href="app/pages/team.html" class="links">Our Team</a></h4>
-      <h4><a href="app/pages/gallery.html" class="links">Gallery</a></h4>
-      <!--<h4><a href="app/pages/donate.html" class="links" id="rzp-button1">Donate</a></h4>-->
+      <br>
+      <h4><a href="team.html" class="links">Our Team</a></h4>
+      <h4><a href="gallery.html" class="links">Gallery</a></h4>
+      <h4><a href="https://enactus-iitr.github.io/blog" class="links">Blog</a></h4>
 
-
-		<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 		<script>
 		var options = {
 		    "key": "rzp_test_NGNvbAqeIaxqZL",
@@ -447,7 +438,6 @@
 
     <div class="col-sm-3">
       <h3 style="color:#fdc03c;">Meet Us</h3>
-
       <img src="app/images/iitr.jpg" class="iitr">
       <h4 class="social-link">IIT ROORKEE</h4>
       <h4 class="social-link">Uttarakhand, 247667</h4>
