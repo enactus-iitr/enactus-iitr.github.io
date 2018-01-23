@@ -3,18 +3,7 @@ $(document).ready(function(){
     setTimeout(hideURLbar, 0);
   }, false);
 
-  $('.carousel').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    autoplay:true,
-    adaptiveHeight: true,
-    imagesLoaded: true,
-    freeScroll: true,
-    wrapAround: true,
-    setGallerySize: false,
-    watchCSS: true
-  });
+
 
 
   function hideURLbar() {
@@ -57,4 +46,16 @@ $(document).ready(function(){
         });
       });
 
+});
+$('.carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  autoplay:true,
+  adaptiveHeight: true,
+  imagesLoaded: true,
+  freeScroll: true,
+  wrapAround: true,
+  setGallerySize: false,
+  watchCSS: true
 });
