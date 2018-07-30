@@ -40,8 +40,8 @@ float: right;
 
 }
 .news-img{
-  width: 240px;
-  height:240px;
+  width: 340px;
+  height:340px;
   border: 1px solid #fdc03c;
 
 }
@@ -206,12 +206,12 @@ font-weight:700;
 }
 /* carousel height */
 .carousel {
-  height: 50vh;
+  height: 70vh;
 
 }
 /* cell inherit height from carousel */
 .carousel-cell {
-  width: 50%; /* full width */
+  width: 60%; /* full width */
   height: 100%; /* height of carousel */
   margin: 10px;
 }
